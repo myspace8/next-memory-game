@@ -1,0 +1,1 @@
+// Dynamic route for gameplay with environment (e.g., /game/play/ocean)
