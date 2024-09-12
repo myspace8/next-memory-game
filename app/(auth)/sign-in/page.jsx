@@ -5,7 +5,7 @@ Relevance: Ensures that only authenticated users can access game features, track
 "use client";
 import { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../../lib/firebase";
+import { auth } from "../../../lib/firebaseClient";
 import { useRouter } from "next/navigation";
 
 const Login = () => {

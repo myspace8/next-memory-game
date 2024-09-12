@@ -5,7 +5,7 @@ Relevance: Signing up is important for linking a player’s progress, coins, and
 "use client";
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth, db } from "../../../lib/firebase";
+import { auth, db } from "../../../lib/firebaseClient";
 import { setDoc, doc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 

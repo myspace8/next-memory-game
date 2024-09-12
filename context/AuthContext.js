@@ -1,8 +1,7 @@
-// /context/AuthContext.js
 "use client";
 import { createContext, useContext, useEffect, useState } from "react";
 import { onAuthStateChanged, signOut as firebaseSignOut } from "firebase/auth";
-import { auth } from "../lib/firebase";
+import { auth } from "@/lib/firebaseClient";
 import { useRouter } from "next/navigation";
 
 const AuthContext = createContext();
