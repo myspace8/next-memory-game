@@ -1,1 +1,2 @@
-// Game home page (level selector)
+/**Purpose: The game homepage, or level selector, where users can choose different grid sizes or difficulty levels to start the game. Each level may offer different challenges (e.g., 4x4 grid, 5x4 grid).
+Relevance: This page serves as the entry point for the actual gameplay. It helps users select the game configuration based on their experience or preference. */

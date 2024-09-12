@@ -1,1 +1,2 @@
-// Leaderboard list component
+/**Purpose: A component to render the list of top players and their scores. It fetches data from Firebase Firestore to display the latest leaderboard rankings.
+Relevance: Keeps users engaged by displaying real-time scores and motivating players to improve their standing. It also showcases Firebase’s real-time database capabilities. */

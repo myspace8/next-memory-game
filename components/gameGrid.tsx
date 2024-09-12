@@ -1,1 +1,2 @@
-// Game grid component
+/**Purpose: The core component of the memory game. This component dynamically generates the grid layout for the game based on the level or theme, handles user interactions like card flips, checks for matches, and tracks progress such as moves and time.
+Relevance: The heart of the memory game itself. This component holds the key logic for the gameplay and interacts with the backend to save user progress, calculate scores, and track achievements. */

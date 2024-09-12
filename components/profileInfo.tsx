@@ -1,1 +1,2 @@
-// Profile information component
+/**Purpose: This component is used to display the user's profile information, such as their name, email, phone number, and game stats. It also provides an interface for updating their profile.
+Relevance: Central to account management and customization. By integrating with Firebase Authentication, this component lets users securely manage their information. */

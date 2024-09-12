@@ -78,3 +78,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 ├── tailwind.config.js         # Tailwind CSS configuration
 ├── postcss.config.js          # PostCSS configuration
 └── package.json               # Project dependencies and scripts
+
+## User Journey:
+- Authentication: The user signs up or logs in via the Authentication System.
+- User Profile: The User Management System retrieves the user's profile and past game progress from Firestore.
+- Gameplay: The user selects a level, and the Game Logic System starts the game (game grid is loaded).
+- Gameplay Updates: As the user plays, their progress (moves, time, score) is tracked locally.
+- Game Completion: Upon completing a level, the Notification & Reward System displays a modal and awards coins.
+- Data Persistence: The Game Progress and Data Storage System updates Firestore with the new game stats and rewards.
+- Leaderboard Update: The Leaderboard System updates the user's position and reflects real-time changes in the leaderboard.
+- Profile Management: The user can update their profile (name, phone, etc.) via the User Management System, and these changes are reflected in Firestore.

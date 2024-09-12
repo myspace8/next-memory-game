@@ -1,1 +1,2 @@
-// Leaderboard page
+/**Purpose: Displays the leaderboard for the game, showing the top players and their respective scores, ranked by the number of coins or points earned.
+Relevance: Encourages user engagement and competitiveness. Players can see where they stand compared to others and aim to improve their ranking. */
