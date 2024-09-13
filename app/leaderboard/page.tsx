@@ -7,18 +7,28 @@ import { useAuth } from "../../context/AuthContext";
 import { useRouter } from "next/navigation";
 
 const Leaderboard = () => {
+  const { user } = useAuth();
+  const router = useRouter();
 
-//   useEffect(() => {
-//     // If no user is authenticated, redirect to login page
-//     if (!user) {
-//       router.push("/sign-in");
-//     }
-//   }, [user, router]);
+  useEffect(() => {
+    // If no user is authenticated, redirect to login page
+    if (!user) {
+      router.push("/sign-in");
+    }
+  }, [user, router]);
 
+
+  if (!user) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <div>
-      <h2 className="text-green-600">Leaderboard</h2>
+      <h2>Leaderboard</h2>
+      <p>You: {user.email}</p>
+      <div>
+        <a href="/profile" className="underline">Profile</a>
+      </div>
     </div>
   );
 };
