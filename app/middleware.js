@@ -23,5 +23,5 @@ export async function middleware(req) {
 
 // Define the routes that will be protected by middleware
 export const config = {
-  matcher: ["/profile", "/leaderboard", "/game", "/protected-route"],
+  matcher: ["/profile", "/leaderboard", "/game"],
 };
