@@ -35,6 +35,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+## TODO
+- Create a QR code that takes users to the /game page. If the player isn’t logged in or it's their first time playing without an account, they’ll be redirected to the /sign-in page. There, they can log in or tap a link to go to the homepage and sign up.
+
+
 ## File structure: AI Generated (chatGT)
 /memory-game
 │
