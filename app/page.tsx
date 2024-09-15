@@ -5,9 +5,11 @@ Relevance: The first point of interaction for users, providing an introduction t
 "use client"
 import Link from 'next/link';
 import { useAuth } from '@/context/AuthContext'; // Assuming you've set up AuthContext
+import { useUser } from '../context/userContext';
 
 export default function HomePage() {
   const { user } = useAuth(); // Get user information from context
+  const { userProfile } = useUser();
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center">
@@ -21,6 +23,8 @@ export default function HomePage() {
         {/* Call-to-Action */}
         {user ? (
           <div>
+            <h1>Welcome {userProfile?.displayName || 'No Name'}</h1>
+            <img src={userProfile?.avatar || '/default-avatar.png'} alt="Avatar" width="100" />
             <Link href="/game">
               <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg">
                 Continue Playing

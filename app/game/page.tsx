@@ -7,7 +7,7 @@ import { useAuth } from "../../context/AuthContext";
 import { useRouter } from "next/navigation";
 
 const Gameplay = () => {
-    const { user } = useAuth();
+    const { user, signOut } = useAuth();
     const router = useRouter();
   
     useEffect(() => {
@@ -26,6 +26,7 @@ const Gameplay = () => {
       <h2>Gameplay</h2>
       <p>You: {user.email}</p>
       <p className="text-sm">The game homepage, or level selector, where users can choose different grid sizes or difficulty levels to start the game. Each level may offer different challenges (e.g., 4x4 grid, 5x4 grid)</p>
+      <button onClick={signOut}>Sign Out</button>
     </div>
   );
 };

@@ -5,9 +5,11 @@ Relevance: Allows players to manage their account information and track their in
 import { useEffect } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { useRouter } from "next/navigation";
+import ProfileCard from '../../components/profileCard';
+import ProfileForm from '../../components/profileForm';
 
-const Profile = () => {
-  const { user, signOut } = useAuth();
+const ProfilePage = () => {
+  const { user } = useAuth();
   const router = useRouter();
 
   useEffect(() => {
@@ -18,7 +20,7 @@ const Profile = () => {
   }, [user, router]);
 
   console.log(user);
-  
+
 
   if (!user) {
     return <div>Loading...</div>;
@@ -26,11 +28,11 @@ const Profile = () => {
 
   return (
     <div>
-      <h2>Profile</h2>
-      <p>Email: {user.email}</p>
-      <button onClick={signOut}>Sign Out</button>
+      <h1>Your Profile</h1>
+      <ProfileCard />
+      <ProfileForm />
     </div>
   );
 };
 
-export default Profile;
+export default ProfilePage;
